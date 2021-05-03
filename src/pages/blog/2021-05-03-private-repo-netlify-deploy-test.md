@@ -10,7 +10,7 @@ Why is "featured" required?
 
 
 
-<iframe> \
+<iframe> 
 frameborder="0" 
 height="400" 
 width="575" 
