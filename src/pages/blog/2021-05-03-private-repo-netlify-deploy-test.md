@@ -10,6 +10,6 @@ Why is "featured" required?
 
 Embedded image with link to pop-up:
 
-
-
 ![](/img/growth-score-all-games-flat-image.png)
+
+[(Link)](https://public.tableau.com/views/growthvscommunitydata/IndependentvsAAA?:embed=y&:display_count=y)
