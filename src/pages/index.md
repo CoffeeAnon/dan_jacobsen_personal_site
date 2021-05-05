@@ -1,9 +1,9 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: My name is Dan Jacobsen
 image: /img/crater.jpg
 heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+subheading: I live in Vancouver, BC
 mainpitch:
   title: Why Kaldi
   description: >
