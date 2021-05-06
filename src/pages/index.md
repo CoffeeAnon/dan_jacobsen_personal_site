@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: My name is Dan Jacobsen
-image: /img/crater.jpg
+image: /img/p8130039-1-.jpg
 heading: Great coffee with a conscience
 subheading: I live in Vancouver, BC
 mainpitch:
