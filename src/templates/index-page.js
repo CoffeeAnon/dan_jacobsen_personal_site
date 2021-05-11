@@ -11,6 +11,7 @@ export const IndexPageTemplate = ({
   title,
   heading,
   subheading,
+  subheading2,
   mainpitch,
   description,
   intro,
@@ -34,6 +35,7 @@ export const IndexPageTemplate = ({
           alignItems: 'center',
           flexDirection: 'column',
           marginTop: '5em',
+          minWidth: '400px',
         }}
       >
         <h1
@@ -58,6 +60,17 @@ export const IndexPageTemplate = ({
         >
           {subheading}
         </h3>
+        <h3
+          className="is-size-5-mobile is-size-5-tablet is-size-4-widescreen"
+          style={{
+            color: 'white',
+            lineHeight: '1',
+            padding: '0.25em',
+          }}
+        >
+          {subheading2}
+        </h3>
+
       </div>
     </div>
     <section className="section section--gradient">
@@ -94,7 +107,7 @@ export const IndexPageTemplate = ({
                   <h3 className="has-text-weight-semibold is-size-2">
                     Latest stories
                   </h3>
-                  <BlogRoll />
+                  <BlogRoll blogstyle={"blogindex"}/>
                   <div className="column is-12 has-text-centered">
                     <Link className="btn" to="/blog">
                       Read more
