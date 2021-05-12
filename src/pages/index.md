@@ -4,7 +4,7 @@ title: My name is Dan Jacobsen
 image: /img/p8130039-1-.jpg
 heading: Great coffee with a conscience
 subheading: I live in Vancouver, BC
-subheading2: I make things.
+subheading2: I make things
 mainpitch:
   title: Why Kaldi
   description: >
