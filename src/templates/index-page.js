@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
-
+import { Link as LinkForScroll } from 'react-scroll';
 import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
+import arrowSvg from '../img/arrow.svg';
+
 
 export const IndexPageTemplate = ({
   image,
@@ -12,7 +14,6 @@ export const IndexPageTemplate = ({
   heading,
   subheading,
   subheading2,
-  mainpitch,
   description,
   intro,
 }) => (
@@ -70,23 +71,26 @@ export const IndexPageTemplate = ({
         >
           {subheading2}
         </h3>
+        <div className="hero-arrow">
+        <LinkForScroll
+          activeClass="active"
+          to="content"
+          smooth
+          duration={250}
+          offset={-50}
+          >
+          <img src={arrowSvg} alt="Scroll down" />
+        </LinkForScroll>
+      </div>
 
       </div>
-    </div>
+  </div>
     <section className="section section--gradient">
       <div className="container">
         <div className="section">
           <div className="columns">
             <div className="column is-10 is-offset-1">
               <div className="content">
-                <div className="content">
-                  <div className="tile">
-                    <h1 className="title">{mainpitch.title}</h1>
-                  </div>
-                  <div className="tile">
-                    <h3 className="subtitle">{mainpitch.description}</h3>
-                  </div>
-                </div>
                 <div className="columns">
                   <div className="column is-12">
                     <h3 className="has-text-weight-semibold is-size-2">
@@ -128,7 +132,7 @@ IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   heading: PropTypes.string,
   subheading: PropTypes.string,
-  mainpitch: PropTypes.object,
+  subheading2: PropTypes.string,
   description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
@@ -145,7 +149,7 @@ const IndexPage = ({ data }) => {
         title={frontmatter.title}
         heading={frontmatter.heading}
         subheading={frontmatter.subheading}
-        mainpitch={frontmatter.mainpitch}
+        subheading2={frontmatter.subheading2}
         description={frontmatter.description}
         intro={frontmatter.intro}
       />
@@ -177,10 +181,7 @@ export const pageQuery = graphql`
         }
         heading
         subheading
-        mainpitch {
-          title
-          description
-        }
+        subheading2
         description
         intro {
           blurbs {
