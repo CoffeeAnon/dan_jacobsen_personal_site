@@ -14,10 +14,16 @@ intro:
       author: Clayton M. Christensen, Michael E Raynor
     - image: /img/dalio0-4ddd71539e3ab82b63836f8f68993b07.png
       text: Ray Dalio - The World Has Gone Mad and the System is Broken
+      title: The World Has Gone Mad and the System is Broken
+      author: Ray Dalio
     - image: /img/harari0-9d8f57d632b4b8775a7deb3d1b2041e9.jpg
       text: Yuval Noah Harari - Homo Deus
+      title: Yuval Noah Harari
+      author: Homo Deus
     - image: /img/duke0-63acb7ea8dc9b3562aeee4f51b30d9d4.jpeg
       text: Annie Duke - Thinking in Bets
+      author: Annie Duke
+      title: Thinking in Bets
   heading: Projects
   description: "\n"
 main:
