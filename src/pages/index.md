@@ -5,7 +5,7 @@ image: /img/p8130039-1-.jpg
 heading: Projects
 subheading: I live in Vancouver, BC
 subheading2: I make things.
-description: asdf
+description: ""
 intro:
   blurbs:
     - image: /img/christensen0-24b24ce57928e1f772a324bf7a988140.jpg
