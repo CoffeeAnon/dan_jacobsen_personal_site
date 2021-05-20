@@ -1,19 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Open+Sans:wght@300&display=swap');
-$family-sans: "Open Sans"
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans:wght@300&display=swap');
+$family-sans: 'Open Sans', sans-serif;
+$family-lato: 'Lato', sans-serif;
 
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
 //Blog logo brand color: #6292F1
 
-$blog-blue: #6292F1
-$blog-blue-invert: #fff
+// Banff colors - 2021-5-13
+$banff-turqoise: #0F4C5C
+$banff-turqoise-invert: #FFFBFF
+$banff-gray: #E6E6E6
+$banff-white: #FFFBFF
+$banff-brown: #311E10
+$banff-orange: #DD6031
 
-$primary: $blog-blue
-$primary-invert: $white
+$primary: $banff-turqoise
+$primary-invert: $banff-gray
 $body-color: #333
-$black: #2b2523
-$family-primary: $family-sans
+$black: $banff-brown
+$family-primary: $family-lato
+$family-secondary: $family-sans
+
+$box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12)
 
 .navbar .navbar-menu
   box-shadow:none !important
@@ -88,6 +97,11 @@ $family-primary: $family-sans
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
+.box 
+    border-radius: 1px
+
+
+
 .margin-top-0
   margin-top: 0 !important
 
@@ -108,9 +122,9 @@ footer.footer
 $menu-item-color: $white-ter
 $menu-item-hover-color: $black !important
 $menu-item-hover-background-color: $black
-$menu-item-active-color: $blog-blue-invert
-$menu-item-active-background-color:	$blog-blue-invert
-$menu-list-border-left: 1px solid $blog-blue-invert
+$menu-item-active-color: $banff-turqoise-invert
+$menu-item-active-background-color: $banff-turqoise-invert
+$menu-list-border-left: 1px solid $banff-turqoise-invert
 $menu-label-color: $white-ter
 
 
@@ -134,13 +148,17 @@ $menu-label-color: $white-ter
 
 // blog roll
 .blog-list-item.is-featured
-  background-color: #6292F133;
+  background-color: #0F4C5C33;
 .blog-list-item header
   display: flex;
   margin-bottom: 1em;
 .blog-list-item .featured-thumbnail
   flex-basis: 35%;
   margin: 0 1.5em 0 0;
+.blog-list-item .box
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 
 .hero-arrow
   bottom: 0;
@@ -149,8 +167,19 @@ $menu-label-color: $white-ter
   width: 45px;
   animation: downArrow 0.8s ease-out infinite
 
+.contact-element
+  align-items: center;
 
-@import "~bulma"
+.has-equal-height 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+.box
+  box-shadow: $box-shadow
+
+
+@import "../../node_modules/bulma/bulma.sass";
 
 
 // responsiveness
@@ -158,6 +187,7 @@ $menu-label-color: $white-ter
   .blog-list-item .featured-thumbnail
     flex-basis: 50%;
 
+// Commented out mobile section which does crazy things to using is-mobile for columns
 +mobile
   .blog-list-item header
     display: block
@@ -165,3 +195,5 @@ $menu-label-color: $white-ter
     text-align: center;
     max-width: 70%;
     margin: 0 0 1em;
+  .project-section columns
+    display: flex;
