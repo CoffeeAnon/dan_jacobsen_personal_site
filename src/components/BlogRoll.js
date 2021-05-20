@@ -20,7 +20,11 @@ class BlogRoll extends React.Component {
               <article
                 className={`blog-list-item tile is-child box notification ${
                   post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
+                }`} style={{
+                  justifyContent: "space-between",
+                  flexDirection: "column",
+                  display: "flex",
+                }}
               >
                 <header>
                   {post.frontmatter.featuredimage ? (
@@ -50,10 +54,20 @@ class BlogRoll extends React.Component {
                   {post.excerpt}
                   <br />
                   <br />
-                  <Link className="button" to={post.fields.slug}>
-                    Keep Reading →
-                  </Link>
+                  
                 </p>
+                <div className="columns">
+                  <div className="column is-narrow">
+                    <Link className="button" to={post.fields.slug} style={{
+                        alignSelf: "flex-end",
+                        marginTop: "auto",
+                        
+                      }}>
+                        Keep Reading →
+                    </Link>
+
+                  </div>
+                </div>
               </article>
             </div>
           ))}
