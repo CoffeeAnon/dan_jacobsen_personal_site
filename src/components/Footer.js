@@ -29,7 +29,7 @@ const Footer = class extends React.Component {
             <div className="column social">
                 <div className="columns is-mobile">
                     <div className="column is-half">
-                      <div className="columns" style={{
+                      <div className="columns is-mobile" style={{
                             justifyContent: "flex-end"
                           }}>
                         <div className="column is-narrow">
@@ -55,7 +55,7 @@ const Footer = class extends React.Component {
               <div className="columns is-mobile">
 
                 <div className="column is-half">
-                  <div className="columns" style={{
+                  <div className="columns is-mobile" style={{
                       justifyContent: "flex-end"
                     }}>
                       <div className="column is-narrow">
@@ -81,7 +81,7 @@ const Footer = class extends React.Component {
             <div className="column social">
               <div className="columns is-mobile">
                 <div className="column is-half">
-                  <div className="columns" style={{
+                  <div className="columns is-mobile" style={{
                         justifyContent: "flex-end"
                       }}>
                     <div className="column is-narrow">
