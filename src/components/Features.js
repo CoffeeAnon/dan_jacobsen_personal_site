@@ -30,7 +30,9 @@ const FeatureGrid = ({ gridItems }) => (
                   <PreviewCompatibleImage imageInfo={item} />
                 </div>
               </div>
-              <p className="title is-5">
+              <p className="title is-5 is-family-secondary" style={{
+                    fontSize: "1.1em", marginBottom: "1.5em"
+                  }}>
               {item.text}
               </p>
               <p className="subtitle is-6">@johnsmith</p>

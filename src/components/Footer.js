@@ -6,6 +6,9 @@ import facebook from '../img/social/facebook.svg'
 import instagram from '../img/social/instagram.svg'
 import twitter from '../img/social/twitter.svg'
 import vimeo from '../img/social/vimeo.svg'
+import mail from '../img/mail-dark.svg'
+import linkedin from '../img/social/linkedin.svg'
+import github from '../img/social/github-dark.svg'
 
 const Footer = class extends React.Component {
   render() {
@@ -33,11 +36,11 @@ const Footer = class extends React.Component {
                             justifyContent: "flex-end"
                           }}>
                         <div className="column is-narrow">
-                          <a title="facebook" href="https://facebook.com">
+                          <a title="email" href="mailto:dan@danjacobsen.com">
                             <img
-                              src={facebook}
-                              alt="Facebook"
-                              style={{ width: '1em', height: '1em' }}
+                              src={mail}
+                              alt="Email"
+                              style={{ width: '1.5em', height: '1.5em' }}
                             />
                           </a>
                         </div>
@@ -59,12 +62,11 @@ const Footer = class extends React.Component {
                       justifyContent: "flex-end"
                     }}>
                       <div className="column is-narrow">
-                      <a title="twitter" href="https://twitter.com">
+                      <a title="linkedin" href="https://linkedin.com/danjacobsen">
                       <img
-                        className="fas fa-lg"
-                        src={twitter}
-                        alt="Twitter"
-                        style={{ width: '1em', height: '1em' }}
+                        src={linkedin}
+                        alt="LinkedIn"
+                        style={{ width: '1.5em', height: '1.5em' }}
                       />
                     </a>
 
@@ -85,11 +87,11 @@ const Footer = class extends React.Component {
                         justifyContent: "flex-end"
                       }}>
                     <div className="column is-narrow">
-                      <a title="instagram" href="https://instagram.com">
+                      <a title="instagram" href="https://github.com/CitizenDaniel">
                         <img
-                          src={instagram}
-                          alt="Instagram"
-                          style={{ width: '1em', height: '1em' }}
+                          src={github}
+                          alt="Github"
+                          style={{ width: '1.5em', height: '1.5em' }}
                         />
                       </a>
                     </div>
@@ -97,7 +99,7 @@ const Footer = class extends React.Component {
                 </div>
                 <div className="column is-half">
                   <h2 className="has-text-white has-text-bold" to="/blog">
-                      github.com/CitizenDaniel
+                      github.com/citizendaniel
                     </h2>
                 </div>
 
