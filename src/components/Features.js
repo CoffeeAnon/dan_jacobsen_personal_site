@@ -6,7 +6,9 @@ const FeatureGrid = ({ gridItems }) => (
   <div className="project-section columns is-multiline is-centered">
     {gridItems.map((item) => (
       <div key={item.text} className="column is-narrow">
-        <div className="columns is-centered">
+        <div className="columns is-centered" style={{
+            display: "flex",
+          }}>
           <div className="column is-narrow is-flex-grow-0" style={{
               alignContent: "center",
             }}>
