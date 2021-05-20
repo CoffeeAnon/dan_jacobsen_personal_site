@@ -31,11 +31,18 @@ const FeatureGrid = ({ gridItems }) => (
                 </div>
               </div>
               <p className="title is-5 is-family-secondary" style={{
-                    fontSize: "1.1em", marginBottom: "1.5em"
+                    fontSize: "1.1em", 
+                    marginBottom: "1.5em",
+                    marginTop: "0.25em",
+                    marginLeft: "0.5em",
                   }}>
               {item.text}
               </p>
-              <p className="subtitle is-6">@johnsmith</p>
+              <p className="subtitle is-6 is-family-secondary" style={{
+                    marginLeft: "0.5em",
+                  }}>
+                @johnsmith
+              </p>
               <div className="content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Phasellus nec iaculis mauris. <a>@bulmaio</a>.
