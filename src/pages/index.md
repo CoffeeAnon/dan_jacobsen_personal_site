@@ -1,8 +1,8 @@
 ---
 templateKey: index-page
-title: My name is Dan Jacobsen
+title: dan.jacobsen.com
 image: /img/p8130039-1-.jpg
-heading: Projects
+heading: My name is Dan Jacobsen
 subheading: I live in Vancouver, BC
 subheading2: I make things.
 description: ""
@@ -16,7 +16,7 @@ intro:
       text: Yuval Noah Harari - Homo Deus
     - image: /img/duke0-63acb7ea8dc9b3562aeee4f51b30d9d4.jpeg
       text: Annie Duke - Thinking in Bets
-  heading: asdf
+  heading: Projects
   description: "\n"
 main:
   heading: Great coffee with no compromises
