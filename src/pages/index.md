@@ -5,22 +5,19 @@ image: /img/p8130039-1-.jpg
 heading: Projects
 subheading: I live in Vancouver, BC
 subheading2: I make things.
+description: asdf
 intro:
   blurbs:
-    - image: /img/coffee.png
-      text: Project 1
-    - image: /img/coffee-gear.png
-      text: Project 2
-    - image: /img/tutorials.png
-      text: Project 3
-    - image: /img/meeting-space.png
-      text: Project 4
-  heading: What we offer
-  description: >
-    Kaldi is the ultimate spot for coffee lovers who want to learn about their
-    java’s origin and support the farmers that grew it. We take coffee
-    production, roasting and brewing seriously and we’re glad to pass that
-    knowledge to anyone. This is an edit via identity...
+    - image: /img/christensen0-24b24ce57928e1f772a324bf7a988140.jpg
+      text: Clayton M. Christensen, Michael E. Raynor - The Innovator's Solution
+    - image: /img/dalio0-4ddd71539e3ab82b63836f8f68993b07.png
+      text: Ray Dalio - The World Has Gone Mad and the System is Broken
+    - image: /img/harari0-9d8f57d632b4b8775a7deb3d1b2041e9.jpg
+      text: Yuval Noah Harari - Homo Deus
+    - image: /img/duke0-63acb7ea8dc9b3562aeee4f51b30d9d4.jpeg
+      text: Annie Duke - Thinking in Bets
+  heading: asdf
+  description: "\n"
 main:
   heading: Great coffee with no compromises
   description: >
