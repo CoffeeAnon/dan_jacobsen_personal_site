@@ -48,7 +48,7 @@ export const IndexPageTemplate = ({
             alignItems: 'center',
           }}
         >
-          {title}
+          {heading}
         </h1>
         <h3
           className="is-size-5-mobile is-size-5-tablet is-size-4-widescreen has-weight-light is-family-secondary"
@@ -96,7 +96,7 @@ export const IndexPageTemplate = ({
             <div className="content">
               <div className="content has-text-centered">
                 <h3 className="title is-size-4 is-family-secondary is-centered">
-                  {heading}
+                  {intro.heading}
                 </h3>
                 <p>{description}</p>
               </div>
