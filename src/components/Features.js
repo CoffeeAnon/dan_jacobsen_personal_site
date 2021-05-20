@@ -36,12 +36,12 @@ const FeatureGrid = ({ gridItems }) => (
                     marginTop: "0.25em",
                     marginLeft: "0.5em",
                   }}>
-              {item.text}
+              {item.title}
               </p>
               <p className="subtitle is-6 is-family-secondary" style={{
                     marginLeft: "0.5em",
                   }}>
-                @johnsmith
+                {item.author}
               </p>
               <div className="content">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.

@@ -195,6 +195,8 @@ export const pageQuery = graphql`
               }
             }
             text
+            title
+            author
           }
           heading
           description

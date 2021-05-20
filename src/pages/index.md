@@ -10,6 +10,8 @@ intro:
   blurbs:
     - image: /img/christensen0-24b24ce57928e1f772a324bf7a988140.jpg
       text: Clayton M. Christensen, Michael E. Raynor - The Innovator's Solution
+      title: The Innovator's Solution
+      author: Clayton M. Christensen, Michael E Raynor
     - image: /img/dalio0-4ddd71539e3ab82b63836f8f68993b07.png
       text: Ray Dalio - The World Has Gone Mad and the System is Broken
     - image: /img/harari0-9d8f57d632b4b8775a7deb3d1b2041e9.jpg
