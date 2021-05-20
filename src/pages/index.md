@@ -9,19 +9,21 @@ description: ""
 intro:
   blurbs:
     - image: /img/christensen0-24b24ce57928e1f772a324bf7a988140.jpg
-      text: Clayton M. Christensen, Michael E. Raynor - The Innovator's Solution
+      text: A thoroughly researched and cited reference on how and why some companies
+        can make innovative products and others fail.
       title: The Innovator's Solution
       author: Clayton M. Christensen, Michael E Raynor
     - image: /img/dalio0-4ddd71539e3ab82b63836f8f68993b07.png
-      text: Ray Dalio - The World Has Gone Mad and the System is Broken
+      text: A famous wealth fund manager and entrepreneur's take on the state of the
+        economy prior to COVID-19.
       title: The World Has Gone Mad and the System is Broken
       author: Ray Dalio
     - image: /img/harari0-9d8f57d632b4b8775a7deb3d1b2041e9.jpg
-      text: Yuval Noah Harari - Homo Deus
+      text: Dozens of fascinating questions about the future of liberalism.
       title: Yuval Noah Harari
       author: Homo Deus
     - image: /img/duke0-63acb7ea8dc9b3562aeee4f51b30d9d4.jpeg
-      text: Annie Duke - Thinking in Bets
+      text: A really compelling read about making choices with imperfect information.
       author: Annie Duke
       title: Thinking in Bets
   heading: Projects
