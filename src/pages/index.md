@@ -1,7 +1,7 @@
 ---
 templateKey: index-page
 title: dan.jacobsen.com
-image: /img/p8130039-1-.jpg
+image: /img/10peaks2.jpg
 heading: My name is Dan Jacobsen
 subheading: I live in Vancouver, BC
 subheading2: I make things.
