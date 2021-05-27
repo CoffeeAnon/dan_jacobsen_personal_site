@@ -92,14 +92,17 @@ export const IndexPageTemplate = ({
 
 
   </div>
-    <section className="section main-container-gradient" >
+    <section className="section" >
       <div />
       <div className="container">
-        <div className="section">
+        <div className="section" style={{
+          minHeight: '100vh',
+        }}>
           <div className="content has-text-centered">
               <h3 className="title is-size-3 is-family-secondary is-centered">
                 {aboutme.heading}
               </h3>
+              <br/>
               {aboutme.description}
           </div>
         </div>
