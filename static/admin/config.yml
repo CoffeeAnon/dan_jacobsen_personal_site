@@ -43,11 +43,11 @@ collections:
           - {label: Description, name: description, widget: string, required: false}
           - {
               label: AboutMe, 
-              name: aboutMe, 
+              name: aboutme, 
               widget: object,
               fields: 
               [
-                {label: Heading, name: aboutMeHeading, widget: string, required: false},
+                {label: Heading, name: heading, widget: string, required: false},
                 {label: Description, name: description, widget: text}, 
               ]
             }
