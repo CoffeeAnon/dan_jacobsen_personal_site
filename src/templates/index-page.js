@@ -18,6 +18,7 @@ export const IndexPageTemplate = ({
   description,
   aboutme,
   intro,
+  experience,
 }) => (
   <div>
     <div
@@ -120,6 +121,7 @@ export const IndexPageTemplate = ({
             <p>{description}</p>
           </div>
           <Features gridItems={intro.blurbs} />
+          {experience.heading}
         </div>
       </div>
     </div>
@@ -161,6 +163,15 @@ IndexPageTemplate.propTypes = {
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
+  experience: PropTypes.shape({
+    heading: PropTypes.string,
+    text: PropTypes.string,
+    blurbs: PropTypes.arrayOf(PropTypes.shape({
+      title: PropTypes.string,
+      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+      text: PropTypes.string,
+    }))
+  }),
 }
 
 const IndexPage = ({ data }) => {
@@ -176,6 +187,7 @@ const IndexPage = ({ data }) => {
         subheading2={frontmatter.subheading2}
         description={frontmatter.description}
         aboutme={frontmatter.aboutme}
+        experience={frontmatter.experience}
         intro={frontmatter.intro}
       />
     </Layout>
@@ -230,6 +242,25 @@ export const pageQuery = graphql`
           heading
           description
         }
+
+        experience {
+          heading
+          text
+          blurbs {
+            title
+            image {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            text
+          }
+          heading
+          text
+        }        
+
       }
     }
   }

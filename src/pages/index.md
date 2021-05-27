@@ -42,6 +42,25 @@ intro:
       title: Thinking in Bets
   heading: Projects
   description: "\n"
+
+experience:
+  heading: Experience
+  text: this is text
+  blurbs:
+    - title: Finn AI
+      image: /img/duke0-63acb7ea8dc9b3562aeee4f51b30d9d4.jpeg
+      text: This is some text 1
+    - title: Gaslamp Games
+      image: /img/duke0-63acb7ea8dc9b3562aeee4f51b30d9d4.jpeg
+      text: This is some text 2
+    - title: University of Victoria
+      image: /img/duke0-63acb7ea8dc9b3562aeee4f51b30d9d4.jpeg
+      text: This is some text 3
+    - title: Sabbatical
+      image: /img/duke0-63acb7ea8dc9b3562aeee4f51b30d9d4.jpeg
+      text: This is some text 4
+    
+
 main:
   heading: Great coffee with no compromises
   description: >
