@@ -6,11 +6,7 @@ const FeatureGrid = ({ gridItems }) => (
   <div className="project-section columns is-multiline is-centered">
     {gridItems.map((item) => (
       <div key={item.text} className="column is-narrow">
-        <div className="columns is-centered is-mobile" style={{
-            display: "flex",
-          }}>
-          <div className="column is-narrow">
-            <div className="box" style={{
+        <div className="box" style={{
                 width: "24.5em",
                 height: "28em",
                 padding: "1em",
@@ -62,8 +58,6 @@ const FeatureGrid = ({ gridItems }) => (
                 </div>
               </div>
             </div>
-          </div>
-        </div>
       </div>
     ))}
   </div>

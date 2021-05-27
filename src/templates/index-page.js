@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby'
 import { Link as LinkForScroll } from 'react-scroll';
 import Layout from '../components/Layout'
 import Features from '../components/Features'
+import Experience from '../components/Experience'
 import BlogRoll from '../components/BlogRoll'
 import arrowSvg from '../img/arrow.svg';
 import dots from '../img/dot-grid-paper-100.svg';
@@ -93,18 +94,44 @@ export const IndexPageTemplate = ({
 
 
   </div>
-    <div className="section" style={{
+    <div className="section" style={{ //about me section
       minHeight: '100vh',
     }}>
-      <div className="content has-text-centered">
-          <h3 className="title is-size-3 is-family-secondary is-centered">
-            {aboutme.heading}
-          </h3>
-          <br/>
-          {aboutme.description}
+      <div className="columns">
+        <div className="column is-8 is-offset-2">
+          <div className="content">
+            <h3 className="title is-size-3 is-family-secondary">
+              {aboutme.heading}
+            </h3>
+            <br/>
+            {aboutme.description}
+          </div>
+        </div>
       </div>
     </div>
-    <div className="section" style={{
+    <div className="section" style={{ // experience section
+      minHeight: '100vh',
+    }}>
+      <div className="columns is-mobile is-centered">
+        <div className="column is-8-mobile is-10-tablet is-8-desktop is-6-widescreen is-5-fullhd">
+          <div className="content">
+            <div className="content has-text-centered">
+              <h3 className="title is-size-3 is-family-secondary is-centered" style={{
+                marginBottom: "1rem",
+              }}>
+                {experience.heading}
+              </h3>
+              {/*
+              <p>{experience.text}</p>
+              */}
+            </div>
+            <Experience gridItems={experience.blurbs} />
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div className="section" style={{ // portfolio section
         backgroundColor: '#2e4854',
         minHeight: '100vh',
         paddingTop: '3rem',
@@ -121,10 +148,11 @@ export const IndexPageTemplate = ({
             <p>{description}</p>
           </div>
           <Features gridItems={intro.blurbs} />
-          {experience.heading}
         </div>
       </div>
     </div>
+    
+
     <div className="section" style={{
         
     }}>

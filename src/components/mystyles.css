@@ -134,7 +134,7 @@ footer.footer {
 
 .hero-arrow {
   bottom: 0;
-  margin-bottom: 1.875em;
+  margin-bottom: 7rem;
   position: absolute;
   width: 45px;
   animation: down-arrow 0.8s ease-out infinite; }
@@ -7926,10 +7926,17 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
     max-width: 12rem;
     margin: 0 0 1em; }
   .project-section columns {
-    display: flex; } }
+    display: flex; }
+  .experience-section columns {
+    padding-left: 2rem;
+    padding-right: 2rem; } }
 
 .footer-social {
   flex-direction: column; }
+
+.columns.is-variable-vertical > .column {
+  padding-top: var(--columnGap);
+  padding-bottom: var(--columnGap); }
 
 @keyframes down-arrow {
   0% {
