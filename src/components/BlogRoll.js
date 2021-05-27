@@ -28,7 +28,7 @@ class BlogRoll extends React.Component {
               >
                 <header>
                   {post.frontmatter.featuredimage ? (
-                    <div className="featured-thumbnail">
+                    <div className="image featured-thumbnail is-4by3">
                       <PreviewCompatibleImage
                         imageInfo={{
                           image: post.frontmatter.featuredimage,
@@ -39,13 +39,14 @@ class BlogRoll extends React.Component {
                   ) : null}
                   <p className="post-meta">
                     <Link
-                      className="title has-text-primary is-size-4"
+                      className="title is-size-5 is-family-secondary"
                       to={post.fields.slug}
+                      style={{ lineHeight: "1.7"}}
                     >
                       {post.frontmatter.title}
                     </Link>
                     <span> &bull; </span>
-                    <span className="subtitle is-size-5 is-block">
+                    <span className="subtitle is-size-6 is-6 is-family-secondary has-text-weight-bold is-block">
                       {post.frontmatter.date}
                     </span>
                   </p>

@@ -41,6 +41,8 @@
   "scripts": {
     "clean": "gatsby clean",
     "start": "npm run develop",
+    "css-build": "node-sass --omit-source-map-url src/components/all.sass src/components/mystyles.css",
+    "css-watch": "npm run css-build -- --watch",
     "build": "npm run clean && gatsby build",
     "develop": "npm run clean && gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",

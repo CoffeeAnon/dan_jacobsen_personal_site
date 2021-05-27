@@ -6,49 +6,59 @@ const FeatureGrid = ({ gridItems }) => (
   <div className="project-section columns is-multiline is-centered">
     {gridItems.map((item) => (
       <div key={item.text} className="column is-narrow">
-        <div className="columns is-centered" style={{
+        <div className="columns is-centered is-mobile" style={{
             display: "flex",
           }}>
-          <div className="column is-narrow is-flex-grow-0" style={{
-              alignContent: "center",
-            }}>
+          <div className="column is-narrow">
             <div className="box" style={{
-                width: "350px",
-                
+                width: "24.5em",
+                height: "28em",
+                padding: "1em",
               }}>
-              <div>
-                <div
-                  style={{
-                    width: '300px',
-                    display: 'inline-block',
-                    border: '1px solid #aaa',
-                    height: '10em',
-                    overflow: 'hidden',
+              <div className="column " style={{
+                    padding: "0px",
+                    marginTop: "2em",
+                  }}>
+                <div className="columns is-centered is-mobile" style={{
+                      padding: "0px",
+                    }}>
+                  <div classname="column is-narrow ">
+                    <div
+                      style={{
+                        width: '22em',
+                        display: 'inline-block',
+                        border: '1px solid #aaa',
+                        height: '10em',
+                        overflow: 'hidden',
 
-                  }}
-                  >
-                  <PreviewCompatibleImage imageInfo={item} />
+                      }}
+                      >
+                      <PreviewCompatibleImage imageInfo={item} />
+                    </div>
+ 
+                  </div>
                 </div>
-              </div>
-              <p className="title is-5 is-family-secondary" style={{
-                    fontSize: "1.1em", 
-                    marginBottom: "1.5em",
-                    marginTop: "0.25em",
-                    marginLeft: "0.5em",
+                <div>
+               </div>
+              
+                <p className="title is-5 is-family-secondary is-size-5" style={{
+                        margin: "0em 0.5em 1.3em 0.5em",
+                        lineHeight: "1.2",
+                    }}>
+                {item.title}
+                </p>
+                <p className="subtitle is-6 is-family-secondary is-size-6" style={{
+                      marginLeft: "0.5em",
+                      fontWeight: "bold",
+                    }}>
+                  {item.author}
+                </p>
+                <div className="content is-size-7" style={{
+                        marginLeft: "0.5em",
+                        marginRight: "0.5em",
                   }}>
-              {item.title}
-              </p>
-              <p className="subtitle is-6 is-family-secondary" style={{
-                    marginLeft: "0.5em",
-                  }}>
-                {item.author}
-              </p>
-              <div className="content">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Phasellus nec iaculis mauris. <a>@bulmaio</a>.
-                  <a href="#">#css</a> <a href="#">#responsive</a>
-                  <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-
+                    {item.text}
+                </div>
               </div>
             </div>
           </div>

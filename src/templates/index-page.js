@@ -95,29 +95,44 @@ export const IndexPageTemplate = ({
           <div className="columns is-mobile">
             <div className="content">
               <div className="content has-text-centered">
-                <h3 className="title is-size-4 is-family-secondary is-centered">
+                <h3 className="title is-size-3 is-family-secondary is-centered" style={{
+                  marginBottom: "1rem",
+                }}>
                   {intro.heading}
                 </h3>
+                <hr style={{
+                    height: "2px",
+                    width: "10em",
+                    marginBottom: "2rem",
+                  }}/>
                 <p>{description}</p>
               </div>
               <Features gridItems={intro.blurbs} />
-              <div className="columns">
-                <div className="column is-12 has-text-centered">
-                  <Link className="btn" to="/products">
-                    See all products
-                  </Link>
+              <div className="columns is-mobile">
+                <div className="column"/>
+                <div className="column is-three-quarters">
+                  <div className="container has-text-centered">
+                    <h3 className="title is-size-3 is-family-secondary is-centered" style={{
+                        marginTop: "8rem",
+                        marginBottom: "1rem",
+                      }}>
+                      Latest stories
+                    </h3>
+                    <hr style={{
+                      height: "2px",
+                      width: "16em",
+                      marginBottom: "2rem",
+                    }}/>
+
+                  </div>
+                  <BlogRoll blogstyle={"blogindex"}/>
+                  <div className="column is-12 has-text-centered">
+                    <Link className="btn" to="/blog">
+                      Read more
+                    </Link>
+                  </div>
                 </div>
-              </div>
-              <div className="column is-12">
-                <h3 className="has-text-weight-semibold is-size-2">
-                  Latest stories
-                </h3>
-                <BlogRoll blogstyle={"blogindex"}/>
-                <div className="column is-12 has-text-centered">
-                  <Link className="btn" to="/blog">
-                    Read more
-                  </Link>
-                </div>
+                <div className="column"/>
               </div>
             </div>
           </div>
