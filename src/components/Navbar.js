@@ -42,7 +42,7 @@ const Navbar = class extends React.Component {
           <div className="navbar-brand" >
             {
               <Link to="/" className="navbar-item">
-                <h2 className="title is-size-6-mobile is-size-6-tablet is-size-4-desktop is-family-secondary has-text-centered has-text-weight-bold">
+                <h2 className="title is-size-5-mobile is-size-5-tablet is-size-4-desktop is-family-secondary has-text-centered has-text-weight-bold">
                   Dan Jacobsen
                 </h2>
               </Link>
@@ -55,9 +55,6 @@ const Navbar = class extends React.Component {
               data-target="navMenu"
               onClick={() => this.toggleHamburger()}
             >
-              <span />
-              <span />
-              <span />
             </div>
           </div>
           <div
@@ -67,19 +64,26 @@ const Navbar = class extends React.Component {
             <div className="navbar-start has-text-centered" style={{
                 paddingTop: '0.4em',
               }}>
-
-                <Link className="navbar-item" to="/about">
-                  About me
-                </Link>
-                <Link className="navbar-item" to="/products">
-                  Portfolio
-                </Link>
-                <Link className="navbar-item" to="/">
-                  Blog
-                </Link>
-                <Link className="navbar-item" to="/">
-                  Other Things
-                </Link>
+                  <Link className="navbar-item" to="/about">
+                    <h3 className="title is-size-6-mobile is-size-6-tablet is-size-5-desktop is-family-secondary has-text-centered has-text-weight-bold">
+                      About me
+                    </h3>
+                  </Link>
+                  <Link className="navbar-item" to="/products">
+                    <h3 className="title is-size-6-mobile is-size-6-tablet is-size-5-desktop is-family-secondary has-text-centered has-text-weight-bold">
+                      Portfolio
+                    </h3>
+                  </Link>
+                  <Link className="navbar-item" to="/">
+                    <h3 className="title is-size-6-mobile is-size-6-tablet is-size-5-desktop is-family-secondary has-text-centered has-text-weight-bold">
+                      Blog
+                    </h3>
+                  </Link>
+                  <Link className="navbar-item" to="/">
+                    <h3 className="title is-size-6-mobile is-size-6-tablet is-size-5-desktop is-family-secondary has-text-centered has-text-weight-bold">
+                      Other Things
+                    </h3>
+                  </Link>
                 {/*
                 <Link className="navbar-item" to="/blog">
                   Blog

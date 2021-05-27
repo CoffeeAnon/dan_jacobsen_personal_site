@@ -14,6 +14,7 @@ const FeatureGrid = ({ gridItems }) => (
                 width: "24.5em",
                 height: "28em",
                 padding: "1em",
+                backgroundColor: "#f7f7f6",
               }}>
               <div className="column " style={{
                     padding: "0px",

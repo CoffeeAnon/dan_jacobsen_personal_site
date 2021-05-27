@@ -92,68 +92,58 @@ export const IndexPageTemplate = ({
 
 
   </div>
-    <section className="section" >
-      <div />
-      <div className="container">
-        <div className="section" style={{
-          minHeight: '100vh',
-        }}>
+    <div className="section" style={{
+      minHeight: '100vh',
+    }}>
+      <div className="content has-text-centered">
+          <h3 className="title is-size-3 is-family-secondary is-centered">
+            {aboutme.heading}
+          </h3>
+          <br/>
+          {aboutme.description}
+      </div>
+    </div>
+    <div className="section" style={{
+        backgroundColor: '#2e4854',
+        minHeight: '100vh',
+        paddingTop: '3rem',
+    }}>
+      <div className="columns is-mobile">
+        <div className="content">
           <div className="content has-text-centered">
-              <h3 className="title is-size-3 is-family-secondary is-centered">
-                {aboutme.heading}
-              </h3>
-              <br/>
-              {aboutme.description}
+            <h3 className="title is-size-3 is-family-secondary is-centered" style={{
+              marginBottom: "1rem",
+              color: "#FFFEFB",
+            }}>
+              {intro.heading}
+            </h3>
+            <p>{description}</p>
           </div>
-        </div>
-        <div className="section">
+          <Features gridItems={intro.blurbs} />
           <div className="columns is-mobile">
-            <div className="content">
-              <div className="content has-text-centered">
+            <div className="column"/>
+            <div className="column is-three-quarters">
+              <div className="container has-text-centered">
                 <h3 className="title is-size-3 is-family-secondary is-centered" style={{
-                  marginBottom: "1rem",
-                }}>
-                  {intro.heading}
+                    marginTop: "8rem",
+                    marginBottom: "1rem",
+                  }}>
+                  Latest stories
                 </h3>
-                <hr style={{
-                    height: "2px",
-                    width: "10em",
-                    marginBottom: "2rem",
-                  }}/>
-                <p>{description}</p>
               </div>
-              <Features gridItems={intro.blurbs} />
-              <div className="columns is-mobile">
-                <div className="column"/>
-                <div className="column is-three-quarters">
-                  <div className="container has-text-centered">
-                    <h3 className="title is-size-3 is-family-secondary is-centered" style={{
-                        marginTop: "8rem",
-                        marginBottom: "1rem",
-                      }}>
-                      Latest stories
-                    </h3>
-                    <hr style={{
-                      height: "2px",
-                      width: "16em",
-                      marginBottom: "2rem",
-                    }}/>
-
-                  </div>
-                  <BlogRoll blogstyle={"blogindex"}/>
-                  <div className="column is-12 has-text-centered">
-                    <Link className="btn" to="/blog">
-                      Read more
-                    </Link>
-                  </div>
-                </div>
-                <div className="column"/>
+              <BlogRoll blogstyle={"blogindex"}/>
+              <div className="column is-12 has-text-centered">
+                <Link className="btn" to="/blog">
+                  Read more
+                </Link>
               </div>
             </div>
+            <div className="column"/>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+
   </div>
 )
 
