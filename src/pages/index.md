@@ -6,9 +6,20 @@ heading: My name is Dan Jacobsen
 subheading: I live in Vancouver, BC
 subheading2: I make things.
 description: ""
-aboutme: 
-  heading: This is the header for the aboutme section
-  description: This is the description, which is required right now.
+aboutme:
+  heading: ""
+  description: >-
+    As I was finishing school with a BSc in physics, I was launching my first
+    product while also launching its company: a video game studio founded in my
+    friend's basement - no kidding. And at some point, while being distracted
+    from MSc program interviews by the excitement (and terror) of launch, I got
+    hooked on making things people use and love.
+
+
+    I haven't looked back.
+
+
+    Since then I've built startups, spoken at universities and conferences, and worked with some amazing teams of engineers, designers, artists and data scientists to build products people really value.
 intro:
   blurbs:
     - image: /img/christensen0-24b24ce57928e1f772a324bf7a988140.jpg
