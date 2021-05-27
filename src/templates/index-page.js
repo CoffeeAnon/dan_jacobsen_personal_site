@@ -94,7 +94,15 @@ export const IndexPageTemplate = ({
   </div>
     <section className="section main-container-gradient" >
       <div />
-      <div className="container is-centered">
+      <div className="container">
+        <div className="section">
+          <div className="content has-text-centered">
+              <h3 className="title is-size-3 is-family-secondary is-centered">
+                {aboutme.heading}
+              </h3>
+              {aboutme.description}
+          </div>
+        </div>
         <div className="section">
           <div className="columns is-mobile">
             <div className="content">
@@ -153,7 +161,7 @@ IndexPageTemplate.propTypes = {
   subheading: PropTypes.string,
   subheading2: PropTypes.string,
   description: PropTypes.string,
-  aboutme: PropTypes.string,
+  aboutme: PropTypes.object,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),

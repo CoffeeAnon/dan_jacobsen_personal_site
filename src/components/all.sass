@@ -2,10 +2,8 @@
 $family-sans: 'Open Sans', sans-serif;
 $family-lato: 'Lato', sans-serif;
 
-@import "../../node_modules/bulma/sass/utilities/initial-variables";
 
 // Config vars
-//Blog logo brand color: #6292F1
 
 // Banff colors - 2021-5-13
 $banff-turqoise: #0F4C5C
@@ -15,12 +13,27 @@ $banff-white: #FAFAFA
 $banff-brown: #311E10
 $banff-orange: #DD6031
 
+$banff-brown-light: #462D1B
+$banff-paper: #FFFEFB
+
 $primary: $banff-turqoise
 $primary-invert: $banff-gray
-$body-color: #333
-$black: $banff-brown
 $family-primary: $family-lato
 $family-secondary: $family-sans
+
+$white: $banff-paper
+$black: $banff-brown-light
+$dark: $banff-brown
+$grey-darker: $banff-brown
+
+$text: $banff-brown-light
+
+$info: $banff-brown
+$danger: $banff-orange
+
+@import "../../node_modules/bulma/sass/utilities/initial-variables";
+
+
 
 $box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12)
 
@@ -86,7 +99,7 @@ $box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 
     font-size: 18px
     font-size: 1rem
     line-height: 1.25
-    background-color: #fff
+    background-color: $banff-white
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
@@ -105,11 +118,14 @@ $box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 
 .margin-top-0
   margin-top: 0 !important
 
+
+$navbar-breakpoint: 769px
+
+
 .navbar-item .icon
   color: $primary
 // Override for use of svg's from https://simpleicons.org/
 
-$navbar-breakpoint: $mobile
 
 .icon svg
   width: 1.5rem
@@ -187,6 +203,7 @@ $menu-label-color: $white-ter
 
 
 @import "../../node_modules/bulma/bulma.sass";
+
 
 
 // responsiveness
