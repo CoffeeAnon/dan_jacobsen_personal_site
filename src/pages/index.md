@@ -6,9 +6,10 @@ heading: My name is Dan Jacobsen
 subheading: I live in Vancouver, BC
 subheading2: I make things.
 description: ""
-aboutMe: 
-  aboutMeHeading: About me heading text
+aboutMe:
+  aboutMeHeading: This is the header for the aboutme section
   Description: This is the "about me" section description.
+  description: This is the description, which is required right now.
 intro:
   blurbs:
     - image: /img/christensen0-24b24ce57928e1f772a324bf7a988140.jpg
