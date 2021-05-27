@@ -35,23 +35,19 @@ const Navbar = class extends React.Component {
   render() {
     return (
       <nav
-        className="navbar is-transparent"
+        className="navbar is-transparent is-fixed-top"
         role="navigation"
-        aria-label="main-navigation"
-      >
-        <div className="container">
-          <div className="navbar-brand">
-            {/*
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-            </Link>
-            */}
-            {/**
-             * Home link is replacement for logo link
-             */}
-            <Link to="/" className="navbar-item" title="Logo">
-              Home
-            </Link>
+        aria-label="main-navigation">
+        <div className="container" >
+          <div className="navbar-brand" >
+            {
+              <Link to="/" className="navbar-item">
+                <h2 className="title is-size-6-mobile is-size-6-tablet is-size-4-desktop is-family-secondary has-text-centered has-text-weight-bold">
+                  Dan Jacobsen
+                </h2>
+              </Link>
+            
+            }
 
             {/* Hamburger menu */}
             <div
@@ -68,22 +64,34 @@ const Navbar = class extends React.Component {
             id="navMenu"
             className={`navbar-menu ${this.state.navBarActiveClass}`}
           >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
+            <div className="navbar-start has-text-centered" style={{
+                paddingTop: '0.4em',
+              }}>
+
+                <Link className="navbar-item" to="/about">
+                  About me
+                </Link>
+                <Link className="navbar-item" to="/products">
+                  Portfolio
+                </Link>
+                <Link className="navbar-item" to="/">
+                  Blog
+                </Link>
+                <Link className="navbar-item" to="/">
+                  Other Things
+                </Link>
+                {/*
+                <Link className="navbar-item" to="/blog">
+                  Blog
+                </Link>
+                <Link className="navbar-item" to="/contact">
+                  Contact
+                </Link>
+                <Link className="navbar-item" to="/contact/examples">
+                  Form Examples
+                </Link>
+
+              */}
             </div>
             {/*
             <div className="navbar-end has-text-centered">

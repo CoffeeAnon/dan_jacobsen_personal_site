@@ -22,7 +22,7 @@ const FeatureGrid = ({ gridItems }) => (
                 <div className="columns is-centered is-mobile" style={{
                       padding: "0px",
                     }}>
-                  <div classname="column is-narrow ">
+                  <div className="column is-narrow ">
                     <div
                       style={{
                         width: '22em',

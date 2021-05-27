@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" width="110" height="110">
+	<title>dot-grid-paper</title>
+	<defs>
+		<image  width="74" height="74" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEoAAABKCAMAAAArDjJDAAAAAXNSR0IB2cksfwAAASxQTFRFwsHBUk9Pk5GR////7+/vcG1tbGpq9PT0lJKSVVNT0M/QZWJjIx8gJCAh1tXVoZ6fuLa46+rrMi4vYl9gmpiZXFla9fX11tbWOTY3OTU24uHiZGFiJB8hpaSk/v7+6urq+Pj48vLy7u7u6+vr2tnZenh5tLOz+vr6lpSVkY+P+/v7s7Gyf3x95OTkaGVlJiMj2dnZp6Slvb297u3tNjEzIyAgaWVmbWtsLCkq3t7eraysxMPC8fHxOzg5cm1w5ubmqqiozs7Ourm5uLa2/Pz8zczNq6qq9/f32NfX7ezs4uLi4N/ft7a2y8nK9fT0RkJCIx8hgH19ZGJjJSEi19bWoaChubi47OvrMzAxJCEhZV9jz8/PpaOk9vb2g4GBfXx8+fn5pKKiaGdo3dzcRJKKjwAAAGR0Uk5T////AAD//wD///////////9Q/////wD////g////AFAAABBA////AP//AP//sP//////IP//////////AP//kP////8A//8A/zDQ////AP//////////QP//////AP//AP///5WRM6YAAADpSURBVHic7dHpMgJwFMbhk3+2OgeVEiLte1FK2ZekJGm1lJD7v4cu4fXJMHPez8/85swcIsucAbPOLywis7RsIzvLCmCrzGuAOJzionV2e4Db8G5uoau2fTu0699DzASCkHhChiD68TSlKU1pSlOa0pSm/nEqHIkiE4snksik0hnKcm4fsAPmPCCFw2KJjqRcAe5YfCeAnJ7JOV1cXgFmktc3VWRua4U/+kFNaUpTmtKUpjSlqV9O3dUbEN03IfGHYxRhbwawB5YWII/tpw51pdcHbiAyBOT55fWNRvYxYOZ98vGJzNf0ewYO5FQ8p2XxzgAAAABJRU5ErkJggg=="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Background" href="#img1" x="18" y="18" />
+</svg>

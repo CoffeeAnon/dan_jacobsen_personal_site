@@ -6,6 +6,7 @@ import Layout from '../components/Layout'
 import Features from '../components/Features'
 import BlogRoll from '../components/BlogRoll'
 import arrowSvg from '../img/arrow.svg';
+import dots from '../img/dot-grid-paper-100.svg';
 
 
 export const IndexPageTemplate = ({
@@ -19,12 +20,13 @@ export const IndexPageTemplate = ({
 }) => (
   <div>
     <div
-      className="full-width-full-height-image-container"
+      className="full-width-image margin-top-0"
       style={{
         backgroundImage: `url(${
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
-        
+        backgroundPosition:'top left',
+        height: 'calc(100vh)',        
       }}
     >
       <div
@@ -35,10 +37,11 @@ export const IndexPageTemplate = ({
           justifyContent: 'space-around',
           alignItems: 'center',
           flexDirection: 'column',
-          marginTop: '5em',
+          marginTop: '11em',
           minWidth: '400px',
         }}
       >
+
         <h1
           className="is-size-3-mobile is-size-2-tablet is-size-1-widescreen has-weight-light is-family-secondary"
           style={{
@@ -87,9 +90,9 @@ export const IndexPageTemplate = ({
   </div>
 
 
-
   </div>
-    <section className="section section main-container-gradient">
+    <section className="section main-container-gradient" >
+      <div />
       <div className="container is-centered">
         <div className="section">
           <div className="columns is-mobile">
