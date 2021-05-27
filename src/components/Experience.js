@@ -8,7 +8,7 @@ const ExperienceGrid = ({ gridItems }) => (
     {gridItems.map((item) => (
       <div key={item.title} className="column is-6">
         <div className="box" style={{
-            height: "28em",
+            height: "25em",
             padding: "1em",
             backgroundColor: "#f3f1eb",
             border: "1px solid #cecbc7",
