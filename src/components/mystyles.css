@@ -78,6 +78,11 @@
 .navbar-item .icon {
   color: #0F4C5C; }
 
+.navbar .container {
+  max-width: none;
+  padding-left: 3rem;
+  padding-right: 1rem; }
+
 .icon svg {
   width: 1.5rem;
   height: 1.5rem;
@@ -132,7 +137,7 @@ footer.footer {
   margin-bottom: 1.875em;
   position: absolute;
   width: 45px;
-  animation: downArrow 0.8s ease-out infinite; }
+  animation: down-arrow 0.8s ease-out infinite; }
 
 .contact-element {
   align-items: center; }
@@ -7925,3 +7930,9 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 
 .footer-social {
   flex-direction: column; }
+
+@keyframes down-arrow {
+  0% {
+    transform: translate(0, 0); }
+  30% {
+    transform: translate(0, 0.5rem); } }

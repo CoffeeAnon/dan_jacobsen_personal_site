@@ -27,7 +27,7 @@ export const IndexPageTemplate = ({
           !!image.childImageSharp ? image.childImageSharp.fluid.src : image
         })`,
         backgroundPosition:'top left',
-        height: 'calc(100vh)',        
+        height: '100vh',        
       }}
     >
       <div
@@ -120,30 +120,33 @@ export const IndexPageTemplate = ({
             <p>{description}</p>
           </div>
           <Features gridItems={intro.blurbs} />
-          <div className="columns is-mobile">
-            <div className="column"/>
-            <div className="column is-three-quarters">
-              <div className="container has-text-centered">
-                <h3 className="title is-size-3 is-family-secondary is-centered" style={{
-                    marginTop: "8rem",
-                    marginBottom: "1rem",
-                  }}>
-                  Latest stories
-                </h3>
-              </div>
-              <BlogRoll blogstyle={"blogindex"}/>
-              <div className="column is-12 has-text-centered">
-                <Link className="btn" to="/blog">
-                  Read more
-                </Link>
-              </div>
-            </div>
-            <div className="column"/>
-          </div>
         </div>
       </div>
     </div>
-
+    <div className="section" style={{
+        
+    }}>
+      <div className="columns is-mobile">
+        <div className="column"/>
+        <div className="column is-three-quarters">
+          <div className="container has-text-centered">
+            <h3 className="title is-size-3 is-family-secondary is-centered" style={{
+                marginTop: "8rem",
+                marginBottom: "1rem",
+              }}>
+              Latest stories
+            </h3>
+          </div>
+          <BlogRoll blogstyle={"blogindex"}/>
+          <div className="column is-12 has-text-centered">
+            <Link className="btn" to="/blog">
+              Read more
+            </Link>
+          </div>
+        </div>
+        <div className="column"/>
+      </div>
+    </div>
   </div>
 )
 

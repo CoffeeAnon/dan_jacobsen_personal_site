@@ -190,7 +190,7 @@ $menu-label-color: $white-ter
   margin-bottom: 1.875em;
   position: absolute;
   width: 45px;
-  animation: downArrow 0.8s ease-out infinite
+  animation: down-arrow 0.8s ease-out infinite
 
 .contact-element
   align-items: center;
@@ -230,3 +230,9 @@ $menu-label-color: $white-ter
 
 .footer-social
   flex-direction: column
+
+@keyframes down-arrow
+  0%
+    transform: translate(0, 0)
+  30%
+    transform: translate(0, 0.5rem)
