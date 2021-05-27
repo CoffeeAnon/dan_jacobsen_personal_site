@@ -42,12 +42,13 @@ collections:
           - {label: Subheading2, name: subheading2, widget: string}
           - {label: Description, name: description, widget: string, required: false}
           - {
-              label: About Me, 
+              label: AboutMe, 
               name: aboutMe, 
               widget: object,
               fields: 
               [
-                {label: Heading, name: aboutMeHeading, widget: string, required: false}
+                {label: Heading, name: aboutMeHeading, widget: string, required: false},
+                {label: Description, name: description, widget: text}, 
               ]
             }
           - {
