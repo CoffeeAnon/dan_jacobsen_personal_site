@@ -1,42 +1,29 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import PreviewCompatibleImage from './PreviewCompatibleImage'
 
-const FeatureGrid = ({ gridItems }) => (
-  <div className="project-section columns is-multiline is-centered">
+const PortfolioGrid = ({ gridItems }) => (
+  <div className="portfolio-section columns is-multiline is-centered">
     {gridItems.map((item) => (
-      <div key={item.text} className="column is-narrow">
+      <div key={item.text} className="column is-3-fullscreen is-3-widescreen is-3-fullhd is-6-tablet">
         <div className="box" style={{
-                width: "24.5em",
                 height: "28em",
                 padding: "1em",
                 backgroundColor: "#f7f7f6",
-              }}>
-              <div className="column " style={{
-                    padding: "0px",
-                    marginTop: "2em",
-                  }}>
-                <div className="columns is-centered is-mobile" style={{
-                      padding: "0px",
+                border: "1px solid #cecbc7",
+                borderRadius: '0px',
+                boxShadow: 'none',
+                 }}>
+              <div className="column">
+                <div className="columns is-centered">
+                  <div className="image is-96x96 is-centered" style={{
+                      display: 'inline-block',
+                      overflow: 'hidden',
                     }}>
-                  <div className="column is-narrow ">
-                    <div
-                      style={{
-                        width: '22em',
-                        display: 'inline-block',
-                        border: '1px solid #aaa',
-                        height: '10em',
-                        overflow: 'hidden',
-
-                      }}
-                      >
-                      <PreviewCompatibleImage imageInfo={item} />
+                        <PreviewCompatibleImage imageInfo={item} />
                     </div>
- 
-                  </div>
+                 
                 </div>
-                <div>
-               </div>
               
                 <p className="title is-5 is-family-secondary is-size-5" style={{
                         margin: "0em 0.5em 1.3em 0.5em",
@@ -63,7 +50,7 @@ const FeatureGrid = ({ gridItems }) => (
   </div>
 )
 
-FeatureGrid.propTypes = {
+PortfolioGrid.propTypes = {
   gridItems: PropTypes.arrayOf(
     PropTypes.shape({
       image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
@@ -72,4 +59,4 @@ FeatureGrid.propTypes = {
   ),
 }
 
-export default FeatureGrid
+export default PortfolioGrid

@@ -59,7 +59,29 @@ experience:
     - title: Sabbatical
       image: /img/duke0-63acb7ea8dc9b3562aeee4f51b30d9d4.jpeg
       text: This is some text 4
-    
+
+portfolio:
+  heading: Portfolio
+  text: this is portfolio text
+  blurbs:
+    - title: Untitled
+      image: /img/duke0-63acb7ea8dc9b3562aeee4f51b30d9d4.jpeg
+      text: Still very much WIP, I'm experimenting with a couple of things. First, the weirdness of actual orbital mechanics. And second, the relaxing feeling of watching complex simulations at work.
+
+    - title: Finn AI Digital Self-Service
+      image: /img/duke0-63acb7ea8dc9b3562aeee4f51b30d9d4.jpeg
+      text: Finn AI's Digital Self-Service assistant helps users with common banking problems that can't be resolved easily via mobile or web. The product saved end users time, and both reduced operational costs and built trust for financial institutions.
+
+    - title: Clockwork Empires
+      image: /img/duke0-63acb7ea8dc9b3562aeee4f51b30d9d4.jpeg
+      text: A game about the perils of the unknown, The Sims crossed with Settlers, and H.P. Lovecraft. This project was a labor of love, but was ultimately overly ambitious and suffered from scope creep and unwieldy systems.
+
+    - title: Dungeons of Dredmor
+      image: /img/duke0-63acb7ea8dc9b3562aeee4f51b30d9d4.jpeg
+      text: A dungeon game with lutefisk. This project was the foundation for the game studio Gaslamp Games, worked on in basements and couches on evenings and weekends, while everyone in the team was busy with their full-time job or school.
+
+
+ 
 
 main:
   heading: Great coffee with no compromises

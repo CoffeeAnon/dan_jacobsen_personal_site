@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql } from 'gatsby'
 import { Link as LinkForScroll } from 'react-scroll';
 import Layout from '../components/Layout'
-import Features from '../components/Features'
+import Portfolio from '../components/Portfolio'
 import Experience from '../components/Experience'
 import BlogRoll from '../components/BlogRoll'
 import arrowSvg from '../img/arrow.svg';
@@ -20,6 +20,7 @@ export const IndexPageTemplate = ({
   aboutme,
   intro,
   experience,
+  portfolio,
 }) => (
   <div>
     <div
@@ -143,11 +144,10 @@ export const IndexPageTemplate = ({
               marginBottom: "1rem",
               color: "#FFFEFB",
             }}>
-              {intro.heading}
+              {portfolio.heading}
             </h3>
-            <p>{description}</p>
           </div>
-          <Features gridItems={intro.blurbs} />
+          <Portfolio gridItems={portfolio.blurbs} />
         </div>
       </div>
     </div>
@@ -200,6 +200,16 @@ IndexPageTemplate.propTypes = {
       text: PropTypes.string,
     }))
   }),
+  portfolio: PropTypes.shape({
+    heading: PropTypes.string,
+    text: PropTypes.string,
+    blurbs: PropTypes.arrayOf(PropTypes.shape({
+      title: PropTypes.string,
+      image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
+      text: PropTypes.string,
+    }))
+  }),
+
 }
 
 const IndexPage = ({ data }) => {
@@ -216,6 +226,7 @@ const IndexPage = ({ data }) => {
         description={frontmatter.description}
         aboutme={frontmatter.aboutme}
         experience={frontmatter.experience}
+        portfolio={frontmatter.portfolio}
         intro={frontmatter.intro}
       />
     </Layout>
@@ -272,6 +283,24 @@ export const pageQuery = graphql`
         }
 
         experience {
+          heading
+          text
+          blurbs {
+            title
+            image {
+              childImageSharp {
+                fluid(maxWidth: 240, quality: 64) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            text
+          }
+          heading
+          text
+        }        
+        
+        portfolio {
           heading
           text
           blurbs {
