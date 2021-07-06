@@ -13,10 +13,10 @@ import github from '../img/social/github-dark.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer has-background-black has-text-white-ter">
+      <footer className="footer">
         <div className="content ">
           <h1
-            className="is-size-5-mobile is-size-4-tablet is-size-3-widescreen has-text-white-ter has-text-centered"
+            className="is-size-5-mobile is-size-4-tablet is-size-3-widescreen has-text-centered is-family-secondary"
             style={{
               lineHeight: '1',
               padding: '0.5em',
@@ -48,9 +48,14 @@ const Footer = class extends React.Component {
                     </div>
                     
                     <div className="column is-half">
-                      <h2 className="has-text-white has-text-bold" to="/blog">
-                          dan@danjacobsen.com
-                      </h2>
+                      <a title="email" href="mailto:dan@danjacobsen.com" style={{
+                        padding: "0"
+                      }}>
+
+                        <h2 className="has-text-bold has-text-black" to="/blog">
+                            dan@danjacobsen.com
+                        </h2>
+                      </a>
                     </div>
                 </div>
             </div> 
@@ -74,9 +79,14 @@ const Footer = class extends React.Component {
                   </div>
                 </div>
                   <div className="column is-half">
-                        <h2 className="has-text-white has-text-bold" to="/blog">
+                    <a title="linkedin" href="https://linkedin.com/in/danjacobsen01" style={{
+                        padding: "0"
+                      }}>
+
+                        <h2 className="has-text-bold has-text-black" to="/blog">
                             linkedin.com/danjacobsen
                         </h2>
+                    </a>
                       </div>
               </div>
             </div>
@@ -87,7 +97,7 @@ const Footer = class extends React.Component {
                         justifyContent: "flex-end"
                       }}>
                     <div className="column is-narrow">
-                      <a title="instagram" href="https://github.com/CitizenDaniel">
+                      <a title="github" href="https://github.com/CitizenDaniel">
                         <img
                           src={github}
                           alt="Github"
@@ -98,9 +108,14 @@ const Footer = class extends React.Component {
                   </div>
                 </div>
                 <div className="column is-half">
-                  <h2 className="has-text-white has-text-bold" to="/blog">
-                      github.com/citizendaniel
-                    </h2>
+                  <a title="github" href="https://github.com/CitizenDaniel" style={{
+                      padding: "0"
+                    }}>
+
+                    <h2 className="has-text-bold has-text-black" to="/blog">
+                        github.com/citizendaniel
+                      </h2>
+                  </a>
                 </div>
 
               </div>
