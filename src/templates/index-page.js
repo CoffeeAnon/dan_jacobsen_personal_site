@@ -87,7 +87,9 @@ export const IndexPageTemplate = ({
           duration={250}
           offset={-50}
           >
+          {/* 
           <img src={arrowSvg} alt="Scroll down" />
+          */}
         </LinkForScroll>
       </div>
 
@@ -95,89 +97,8 @@ export const IndexPageTemplate = ({
 
 
   </div>
-    <div className="section" style={{ //about me section
-      minHeight: '100vh',
-    }}>
-      <div className="columns">
-        <div className="column is-8 is-offset-2">
-          <div className="content">
-            <h3 className="title is-size-3 is-family-secondary">
-              {aboutme.heading}
-            </h3>
-            <br/>
-            {aboutme.description}
-          </div>
-        </div>
-      </div>
-    </div>
-    <div className="section" style={{ // experience section
-      minHeight: '100vh',
-    }}>
-      <div className="columns is-mobile is-centered">
-        <div className="column is-8-mobile is-10-tablet is-8-desktop is-6-widescreen is-5-fullhd">
-          <div className="content">
-            <div className="content has-text-centered">
-              <h3 className="title is-size-3 is-family-secondary is-centered" style={{
-                marginBottom: "1rem",
-              }}>
-                {experience.heading}
-              </h3>
-              {/*
-              <p>{experience.text}</p>
-              */}
-            </div>
-            <Experience gridItems={experience.blurbs} />
-          </div>
-        </div>
-      </div>
-    </div>
-    
-    <div className="section" style={{ // portfolio section
-        backgroundColor: '#2e4854',
-        minHeight: '100vh',
-        paddingTop: '3rem',
-    }}>
-      <div className="columns is-mobile">
-        <div className="content">
-          <div className="content has-text-centered">
-            <h3 className="title is-size-3 is-family-secondary is-centered" style={{
-              marginBottom: "1rem",
-              color: "#FFFEFB",
-            }}>
-              {portfolio.heading}
-            </h3>
-          </div>
-          <Portfolio gridItems={portfolio.blurbs} />
-        </div>
-      </div>
-    </div>
-    
-
-    <div className="section" style={{
-        
-    }}>
-      <div className="columns is-mobile">
-        <div className="column"/>
-        <div className="column is-three-quarters">
-          <div className="container has-text-centered">
-            <h3 className="title is-size-3 is-family-secondary is-centered" style={{
-                marginTop: "8rem",
-                marginBottom: "1rem",
-              }}>
-              Latest stories
-            </h3>
-          </div>
-          <BlogRoll blogstyle={"blogindex"}/>
-          <div className="column is-12 has-text-centered">
-            <Link className="btn" to="/blog">
-              Read more
-            </Link>
-          </div>
-        </div>
-        <div className="column"/>
-      </div>
-    </div>
   </div>
+  
 )
 
 IndexPageTemplate.propTypes = {
