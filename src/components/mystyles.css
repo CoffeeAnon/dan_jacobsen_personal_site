@@ -107,12 +107,9 @@ footer.footer {
   padding: 2em; }
 
 .social a {
-  padding: .77em .02em 0em .24em;
-  border-radius: 1em;
+  padding: 1.1em 0.6em 0.4em .6em;
+  border-radius: 2em;
   background-color: whitesmoke;
-  margin: .5em;
-  width: 1em;
-  height: 1em;
   vertical-align: middle;
   display: inline; }
 
