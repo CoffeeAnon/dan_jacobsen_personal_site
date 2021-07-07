@@ -25,88 +25,58 @@ const Footer = class extends React.Component {
           </h1>
         </div>
         <div className="columns is-mobile is-centered">
-          <div className="column is-6" style={{marginRight: "6em",
-              }}>
+          <div className="column is-narrow">
+            <div className="columns is-mobile">
+                <div className="column social-column is-narrow">
+                  <a title="email" href="mailto:dan@danjacobsen.com">
+                    <img className="social-img"
+                      src={mail}
+                      alt="Email"
+                    />
+                  </a>
+                </div>
+                
+                <div className="column">
+                  <a title="email" href="mailto:dan@danjacobsen.com" style={{
+                    padding: "0"
+                  }}>
 
-            <div className="column social">
-                <div className="columns is-mobile">
-                    <div className="column is-half">
-                      <div className="columns is-mobile" style={{
-                            justifyContent: "flex-end"
-                          }}>
-                        <div className="column is-narrow">
-                          <a title="email" href="mailto:dan@danjacobsen.com">
-                            <img
-                              src={mail}
-                              alt="Email"
-                              style={{ width: '1.5em', height: '1.5em' }}
-                            />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    
-                    <div className="column is-half">
-                      <a title="email" href="mailto:dan@danjacobsen.com" style={{
-                        padding: "0"
-                      }}>
-
-                        <h2 className="has-text-bold has-text-black" to="/blog">
-                            dan@danjacobsen.com
-                        </h2>
-                      </a>
-                    </div>
+                    <h2 className="has-text-bold has-text-black" to="/blog">
+                        dan@danjacobsen.com
+                    </h2>
+                  </a>
                 </div>
             </div> 
-            <div className="column social">
-              <div className="columns is-mobile">
-
-                <div className="column is-half">
-                  <div className="columns is-mobile" style={{
-                      justifyContent: "flex-end"
-                    }}>
-                      <div className="column is-narrow">
-                      <a title="linkedin" href="https://linkedin.com/danjacobsen">
-                      <img
-                        src={linkedin}
-                        alt="LinkedIn"
-                        style={{ width: '1.5em', height: '1.5em' }}
-                      />
-                    </a>
-
-                      </div>
-                  </div>
-                </div>
-                  <div className="column is-half">
-                    <a title="linkedin" href="https://linkedin.com/in/danjacobsen01" style={{
-                        padding: "0"
-                      }}>
-
-                        <h2 className="has-text-bold has-text-black" to="/blog">
-                            linkedin.com/danjacobsen
-                        </h2>
-                    </a>
-                      </div>
+            <div className="columns is-mobile">
+              <div className="column social-column is-narrow">
+                <a title="linkedin" href="https://linkedin.com/danjacobsen">
+                  <img className="social-img"
+                    src={linkedin}
+                    alt="LinkedIn"
+                  />
+                </a>
               </div>
-            </div>
-            <div className="column social">
-              <div className="columns is-mobile">
-                <div className="column is-half">
-                  <div className="columns is-mobile" style={{
-                        justifyContent: "flex-end"
-                      }}>
-                    <div className="column is-narrow">
-                      <a title="github" href="https://github.com/CitizenDaniel">
-                        <img
-                          src={github}
-                          alt="Github"
-                          style={{ width: '1.5em', height: '1.5em' }}
-                        />
-                      </a>
-                    </div>
-                  </div>
+                <div className="column">
+                  <a title="linkedin" href="https://linkedin.com/in/danjacobsen01" style={{
+                      padding: "0"
+                    }}>
+                      <h2 className="has-text-bold has-text-black" to="/blog">
+                          linkedin.com/danjacobsen
+                      </h2>
+                  </a>
                 </div>
-                <div className="column is-half">
+              </div>
+              <div className="columns is-mobile">
+                <div className="column social-column is-narrow">
+                  <a title="github" href="https://github.com/CitizenDaniel">
+                    <img
+                      src={github}
+                      alt="Github"
+                      style={{ width: '1.5em', height: '1.5em' }}
+                    />
+                  </a>
+                </div>
+                <div className="column">
                   <a title="github" href="https://github.com/CitizenDaniel" style={{
                       padding: "0"
                     }}>
@@ -116,9 +86,7 @@ const Footer = class extends React.Component {
                       </h2>
                   </a>
                 </div>
-
               </div>
-            </div>
           </div>
         </div>
 

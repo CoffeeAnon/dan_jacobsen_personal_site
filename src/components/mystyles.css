@@ -102,12 +102,13 @@ footer.footer {
   list-style: none !important;
   text-align: left; }
 
-.social {
-  padding: 2em; }
-
 .social a {
   vertical-align: middle;
   display: inline; }
+
+.social-img {
+  width: 1.5em;
+  height: 1.5em; }
 
 .blog-list-item.is-featured {
   background-color: #0F4C5C33; }
