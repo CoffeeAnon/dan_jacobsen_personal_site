@@ -58,7 +58,7 @@ export const IndexPageTemplate = ({
           {heading}
         </h1>
         <h3
-          className="is-size-5-mobile is-size-5-tablet is-size-4-widescreen has-weight-light is-family-secondary"
+          className="is-size-4-mobile is-size-4-tablet is-size-3-widescreen has-weight-light is-family-secondary"
           style={{
             color: 'white',
             lineHeight: '1',
