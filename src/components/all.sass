@@ -15,6 +15,7 @@ $banff-orange: #DD6031
 
 $banff-brown-light: #462D1B
 $banff-paper: #FFFEFB
+$banff-white-smoke: #F5F5F5
 
 $primary: $banff-turqoise
 $primary-invert: $banff-gray
@@ -25,6 +26,7 @@ $white: $banff-paper
 $black: $banff-brown-light
 $dark: $banff-brown
 $grey-darker: $banff-brown
+$grey-lighter: $banff-white-smoke
 
 $text: $banff-brown-light
 
@@ -138,8 +140,6 @@ $navbar-breakpoint: 769px
   fill: currentColor
 .navbar-brand .navbar-item.logo
   padding: 0 1rem
-footer.footer
-  background-color: $white-ter
 
 //Menu overrides
 $menu-item-color: $white-ter
@@ -229,7 +229,10 @@ $menu-label-color: $white-ter
 .footer-social
   flex-direction: column
 
-
+.is-clipped-x
+  overflow-x: hidden;
+  webkit-scrollbar-overflow: hidden
+  webkit-scrollbar-display: none
 
 .columns.is-variable-vertical > .column
   padding-top: var(--columnGap)

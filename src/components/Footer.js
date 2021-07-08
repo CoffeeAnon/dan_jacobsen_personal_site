@@ -12,7 +12,7 @@ import github from '../img/social/github-dark.svg'
 const Footer = class extends React.Component {
   render() {
     return (
-      <footer className="footer">
+      <footer className="footer has-background-grey-lighter">
         <div className="content ">
           <h1
             className="is-size-5-mobile is-size-4-tablet is-size-3-widescreen has-text-centered is-family-secondary"

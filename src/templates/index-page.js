@@ -42,12 +42,12 @@ export const IndexPageTemplate = ({
           alignItems: 'center',
           flexDirection: 'column',
           marginTop: '11em',
-          minWidth: '400px',
+          minWidth: '320px',
         }}
       >
 
         <h1
-          className="is-size-3-mobile is-size-2-tablet is-size-1-widescreen has-weight-light is-family-secondary"
+          className="is-size-4-mobile is-size-2-tablet is-size-1-widescreen has-weight-light is-family-secondary"
           style={{
             color: 'white',
             lineHeight: '1',
@@ -58,7 +58,7 @@ export const IndexPageTemplate = ({
           {heading}
         </h1>
         <h3
-          className="is-size-4-mobile is-size-4-tablet is-size-3-widescreen has-weight-light is-family-secondary"
+          className="is-size-5-mobile is-size-4-tablet is-size-3-widescreen has-weight-light is-family-secondary"
           style={{
             color: 'white',
             lineHeight: '1',
@@ -69,7 +69,7 @@ export const IndexPageTemplate = ({
           {subheading}
         </h3>
         <h3
-          className="is-size-5-mobile is-size-5-tablet is-size-4-widescreen has-weight-light is-family-secondary"
+          className="is-size-6-mobile is-size-5-tablet is-size-4-widescreen has-weight-light is-family-secondary"
           style={{
             color: 'white',
             lineHeight: '1',
