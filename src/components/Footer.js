@@ -68,7 +68,7 @@ const Footer = class extends React.Component {
               </div>
               <div className="columns is-mobile">
                 <div className="column social-column is-narrow">
-                  <a title="github" href="https://github.com/CitizenDaniel">
+                  <a title="github" href="https://github.com/CoffeeAnon">
                     <img
                       src={github}
                       alt="Github"
@@ -77,7 +77,7 @@ const Footer = class extends React.Component {
                   </a>
                 </div>
                 <div className="column">
-                  <a title="github" href="https://github.com/CitizenDaniel" style={{
+                  <a title="github" href="https://github.com/CoffeeAnon" style={{
                       padding: "0"
                     }}>
 
