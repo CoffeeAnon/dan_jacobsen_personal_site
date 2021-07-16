@@ -82,7 +82,7 @@ const Footer = class extends React.Component {
                     }}>
 
                     <h2 className="has-text-bold has-text-black" to="/blog">
-                        github.com/citizendaniel
+                        github.com/coffeeanon
                       </h2>
                   </a>
                 </div>
